@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheVacGuy</title>
+  </head>
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/fonts/fonts.css">
+  <link rel="stylesheet" href="css/styles/header.css">
+
+
+
+  <body>
+    <div class="header">
+      <div class="mobile-header">
+          <div class="logo">
+            <img src="img/logo.png">
+          </div>
+          <span>(801) 479 - 7555</span>
+          <span>thevacguy@gmail.com</span>
+      </div>
+      <ul class="header-links">
+        <li>Home</li>
+        <li>Products</li>
+        <li>Commercial</li>
+        <li>Service & Support</li>
+        <li>Benefits</li>
+        <li>Do-it-yourself</li>
+      </ul>
+    </div>
+    <div id="mySidenav" class="sidenav">
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="mobile-menu-items">
+
+        <a class="sub-nav"  onclick="closeNav()" ui-sref="home">
+          Home
+        </a>
+        <a class="sub-nav " onclick="closeNav()" ui-sref="about">
+          About
+        </a>
+        <a class="sub-nav"  onclick="closeNav()" ui-sref="services">
+          Services
+        </a>
+        <a class="sub-nav " onclick="closeNav()" ui-sref="ownership">
+          Ownership
+        </a>
+        <a class="sub-nav"  onclick="closeNav()" ui-sref="contact">
+          Contact
+        </a>
+      </div>
+    </div>
+    <!-- Use any element to open the sidenav -->
+    <span class="hamburger-icon" onclick="openNav()">&#9776;</span>
+
+
+    <ui-view>
+
+    </ui-view>
+
+<footer>
+
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<script type="text/javascript" src="js/app.js">
+
+
+  </body>
+</html>
